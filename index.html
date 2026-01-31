@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terraria Shimmer & Depth Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <section class="card">
+      <h1>Shimmer & Depth Finder — Terraria</h1>
+      <p class="lead">Pick your guide, world size, jungle side, and shrine background.</p>
+
+      <label for="guide">Guide Name</label>
+      <select id="guide">
+        <option value="0.0000">Joe</option>
+        <option value="0.0278">Connor</option>
+        <option value="0.0556">Tanner</option>
+        <option value="0.0833">Wyatt</option>
+        <option value="0.1111">Cody</option>
+        <option value="0.1389">Levi</option>
+        <option value="0.1667">Luke</option>
+        <option value="0.1944">Jack</option>
+        <option value="0.2222">Scott</option>
+        <option value="0.2500">Logan</option>
+        <option value="0.2778">Cole</option>
+        <option value="0.3056">Asher</option>
+        <option value="0.3333">Bradley</option>
+        <option value="0.3611">Jacob</option>
+        <option value="0.3889">Garrett</option>
+        <option value="0.4167">Dylan</option>
+        <option value="0.4444">Maxwell</option>
+        <option value="0.4722">Steve</option>
+        <option value="0.5000">Brett</option>
+        <option value="0.5278">Andrew</option>
+        <option value="0.5556">Harley</option>
+        <option value="0.5833">Kyle</option>
+        <option value="0.6111">Jake</option>
+        <option value="0.6389">Ryan</option>
+        <option value="0.6667">Jeffrey</option>
+        <option value="0.6944">Seth</option>
+        <option value="0.7222">Marty</option>
+        <option value="0.7500">Brandon</option>
+        <option value="0.7778">Zach</option>
+        <option value="0.8056">Jeff</option>
+        <option value="0.8333">Daniel</option>
+        <option value="0.8611">Trent</option>
+        <option value="0.8889">Kevin</option>
+        <option value="0.9167">Brian</option>
+        <option value="0.9444">Colin</option>
+        <option value="0.9722">Jan</option>
+      </select>
+
+      <label for="world">World Size</label>
+      <select id="world">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+
+      <label>Jungle Side</label>
+      <div class="radios">
+        <label><input type="radio" name="jungle" value="left" checked> Left</label>
+        <label><input type="radio" name="jungle" value="right"> Right</label>
+      </div>
+
+      <label for="background">Shrine Background</label>
+      <div class="background-select">
+        <select id="background">
+          <option value="0.0-0.2" data-img="img/IridescentBrick.png">Iridescent Brick</option>
+          <option value="0.2-0.4" data-img="img/MudstoneBrick.webp">Mudstone Brick</option>
+          <option value="0.4-0.6" data-img="img/RichMahogany.png">Rich Mahogany</option>
+          <option value="0.6-0.8" data-img="img/TinBrick.png">Tin Brick</option>
+          <option value="0.8-1.0" data-img="img/GoldBrick.webp">Gold Brick</option>
+        </select>
+        <img id="bgPreview" src="img/IridescentBrick.png" alt="Preview">
+      </div>
+
+      <button id="calc">Find Shimmer</button>
+      <div class="result" id="result"></div>
+
+      <div class="guide-help">
+        <h3>Can’t remember the name of your first Guide?</h3>
+        <p>
+          Create a new world using the <strong>same seed</strong>, <strong>size</strong>, and <strong>world evil</strong>.
+          The new world’s first Guide will have the same name as your original one.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

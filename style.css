@@ -1,0 +1,139 @@
+/* https://coolors.co/c8ad87-c4aa84-baa17c-9d896b-786952-181818 */
+
+:root {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  --bg: #181818;
+  --card1: #121214;
+  --card2: #0a0a0b;
+  --text: #e4e8ec;
+  --muted: #aeb7c2;
+  --accent: #C8AD87;
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* PAGE */
+main {
+  margin-top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.card {
+  width: 480px;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.75);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+}
+
+/* TEXT */
+h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p.lead {
+  margin: 6px 0 14px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* FORMS */
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+select,
+button {
+  width: 100%;
+  padding: 9px 10px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #23262d;
+  background: #121316;
+  color: #e8edf3;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 14px;
+  background: var(--accent);
+  border: 1px solid #C4AA84;
+  cursor: pointer;
+  transition: background 0.2s ease, border 0.2s ease;
+}
+
+button:hover {
+  background: #9D896B;
+  border-color: #786952;
+}
+
+/* IMAGE PREVIEW */
+.background-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.background-select img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #2b2f3a;
+  background: #0f1012;
+  padding: 3px;
+}
+
+/* RESULT BOX */
+.result {
+  margin-top: 14px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* GUIDE HELP */
+.guide-help {
+  background: rgba(20, 22, 26, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-top: 15px;
+  color: #cfd5db;
+  font-size: 0.95rem;
+}
+
+.guide-help h3 {
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+  color: #786952;
+}
+
+.guide-help strong {
+  color: #fff;
+  font-weight: 600;
+}
+
