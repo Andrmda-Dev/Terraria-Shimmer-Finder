@@ -1,4 +1,7 @@
-/* https://coolors.co/c8ad87-c4aa84-baa17c-9d896b-786952-181818 */
+/* 
+The Colour Scheme:
+https://coolors.co/c8ad87-c4aa84-baa17c-9d896b-786952-181818
+*/
 
 :root {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
@@ -136,4 +139,5 @@ button:hover {
   color: #fff;
   font-weight: 600;
 }
+
 
